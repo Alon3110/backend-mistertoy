@@ -23,7 +23,7 @@ function query(filterBy = {}) {
 
     if(filterBy.labels && filterBy.labels.length) {
         toysToReturn = toysToReturn.filter(
-            toy => filterBy.labels.every(label => toy.labels.includes(label))
+            toy => Array.isArray(toy.labels) && filterBy.labels.some(label => toy.labels.includes(label))
         )
     }
 
@@ -31,6 +31,21 @@ function query(filterBy = {}) {
         toysToReturn = toysToReturn.filter(
             toy => toy.inStock === JSON.parse(filterBy.inStock)
         )
+    }
+
+    const sortBy = filterBy.sortBy || { type: '', sortDir: 1 }
+    const sortDirection = +sortBy.sortDir
+
+    if (sortBy.type) {
+        toysToReturn.sort((toy1, toy2) => {
+            if (sortBy.type === 'name') {
+                return toy1.name.localeCompare(toy2.name) * sortDirection
+            } else if (sortBy.type === 'price' || sortBy.type === 'createdAt') {
+                return (toy1[sortBy.type] - toy2[sortBy.type]) * sortDirection
+            }
+        })
+    } else {
+        toysToReturn.sort((toy1, toy2) => (toy2.createdAt - toy1.createdAt) * sortDirection)
     }
 
     return Promise.resolve(toysToReturn)
