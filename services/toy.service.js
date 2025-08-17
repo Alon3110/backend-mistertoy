@@ -20,6 +20,19 @@ function query(filterBy = {}) {
     if (filterBy.maxPrice) {
         toysToReturn = toysToReturn.filter(toy => toy.price >= filterBy.maxPrice)
     }
+
+    if(filterBy.labels && filterBy.labels.length) {
+        toysToReturn = toysToReturn.filter(
+            toy => filterBy.labels.every(label => toy.labels.includes(label))
+        )
+    }
+
+    if (filterBy.inStock) {
+        toysToReturn = toysToReturn.filter(
+            toy => toy.inStock === JSON.parse(filterBy.inStock)
+        )
+    }
+
     return Promise.resolve(toysToReturn)
 }
 

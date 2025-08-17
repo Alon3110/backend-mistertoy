@@ -30,11 +30,14 @@ app.set('query parser', 'extended')
 // REST API for Toys
 app.get('/api/toy', (req, res) => {
     
+console.log( 'from server',req.query);
 
     const filterBy = {
         txt: req.query.txt || '',
         maxPrice: +req.query.maxPrice || 0,
-        labels: +req.query.labels || [],
+        labels: req.query.labels || [],
+        inStock: req.query.inStock,
+        sortBy: req.query.sortBy
     }
     toyService.query(filterBy)
         .then(toys => res.send(toys))

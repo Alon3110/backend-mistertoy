@@ -10,16 +10,8 @@
             "Box game"
         ],
         "name": "Baby Blocks",
-        "price": 30.77,
+        "price": 30.7,
         "_id": "t377"
-    },
-    {
-        "createdAt": 1754927185160,
-        "imgUrl": "hardcoded-url-for-now",
-        "labels": [],
-        "name": "talking Doll",
-        "price": 61,
-        "_id": "t385"
     },
     {
         "createdAt": 1755431697222,
@@ -29,5 +21,14 @@
         "name": "ofdn Kit",
         "price": 31,
         "_id": "YBqhT"
+    },
+    {
+        "createdAt": 1755441995687,
+        "imgUrl": "hardcoded-url-for-now",
+        "inStock": true,
+        "labels": 90,
+        "name": "Susita-671",
+        "price": 2165,
+        "_id": "n2Hkz"
     }
 ]
