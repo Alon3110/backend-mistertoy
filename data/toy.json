@@ -1,0 +1,33 @@
+[
+    {
+        "createdAt": 1754927185160,
+        "imgUrl": "hardcoded-url-for-now",
+        "inStock": true,
+        "labels": [
+            "Outdoor",
+            "On wheels",
+            "Baby",
+            "Box game"
+        ],
+        "name": "Baby Blocks",
+        "price": 30.77,
+        "_id": "t377"
+    },
+    {
+        "createdAt": 1754927185160,
+        "imgUrl": "hardcoded-url-for-now",
+        "labels": [],
+        "name": "talking Doll",
+        "price": 61,
+        "_id": "t385"
+    },
+    {
+        "createdAt": 1755431697222,
+        "imgUrl": "hardcoded-url-for-now",
+        "inStock": true,
+        "labels": [],
+        "name": "ofdn Kit",
+        "price": 31,
+        "_id": "YBqhT"
+    }
+]

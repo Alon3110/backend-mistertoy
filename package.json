@@ -1,0 +1,30 @@
+{
+  "name": "backend-mistertoy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon --ignore \"./data\" server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alon3110/backend-mistertoy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alon3110/backend-mistertoy/issues"
+  },
+  "homepage": "https://github.com/Alon3110/backend-mistertoy#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "follow-redirects": "^1.15.11",
+    "fr": "^1.2.2",
+    "fs": "^0.0.1-security"
+  }
+}

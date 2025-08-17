@@ -1,0 +1,54 @@
+[
+    {
+        "createdAt": 1754927185160,
+        "imgUrl": "hardcoded-url-for-now",
+        "inStock": true,
+        "labels": [
+            "Outdoor",
+            "On wheels",
+            "Baby",
+            "Box game"
+        ],
+        "name": "Baby Blocks",
+        "price": 30.77,
+        "_id": "t377"
+    },
+    {
+        "createdAt": 1754927185160,
+        "imgUrl": "hardcoded-url-for-now",
+        "inStock": false,
+        "labels": [
+            "Box game",
+            "Puzzle"
+        ],
+        "name": "Robot",
+        "price": 11.86,
+        "_id": "t926"
+    },
+    {
+        "createdAt": 1754927185160,
+        "imgUrl": "hardcoded-url-for-now",
+        "inStock": true,
+        "labels": [
+            "Outdoor",
+            "Baby",
+            "Art"
+        ],
+        "name": "Talking Doll",
+        "price": 52,
+        "_id": "t385"
+    },
+    {
+        "createdAt": 1754927185160,
+        "imgUrl": "hardcoded-url-for-now",
+        "inStock": true,
+        "labels": [
+            "Baby",
+            "Art",
+            "Battery Powered"
+        ],
+        "name": "Art Kit",
+        "price": 34,
+        "_id": "t598"
+    }
+]
