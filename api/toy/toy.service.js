@@ -1,6 +1,6 @@
 
 import fs from 'fs'
-import { utilService } from './util.serivce.js'
+import { utilService } from '../../services/util.service.js'
 
 export const toyService = {
     query,
